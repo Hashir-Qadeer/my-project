@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Running Shoes - SportVerse</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><h1>SportVerse</h1></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cart.html" class="cart-icon">Cart (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li>Elite Running Shoes</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="product-detail">
+    <div class="container">
+      <div class="product-detail-grid">
+        <div class="product-images">
+          <div class="main-image">
+            <img src="https://placehold.co/600x600?text=Sport+Shoes" alt="Elite Running Shoes">
+          </div>
+          <div class="thumbnail-images">
+            <img src="https://placehold.co/100x100?text=Image+1" alt="Thumbnail 1">
+            <img src="https://placehold.co/100x100?text=Image+2" alt="Thumbnail 2">
+            <img src="https://placehold.co/100x100?text=Image+3" alt="Thumbnail 3">
+            <img src="https://placehold.co/100x100?text=Image+4" alt="Thumbnail 4">
+          </div>
+        </div>
+        <div class="product-info">
+          <h1>Elite Running Shoes</h1>
+          <div class="product-rating">
+            <span class="stars">★★★★☆</span>
+            <span class="review-count">(42 reviews)</span>
+          </div>
+          <p class="product-price">$129.99</p>
+          <div class="product-description">
+            <p>Experience unmatched comfort and performance with our Elite Running Shoes. Designed for serious runners, these shoes feature advanced cushioning, breathable materials, and excellent stability to help you go the extra mile.</p>
+            <ul>
+              <li>Lightweight, breathable mesh upper</li>
+              <li>Responsive cushioning for impact absorption</li>
+              <li>Durable rubber outsole with enhanced traction</li>
+              <li>Anatomical fit for natural foot movement</li>
+              <li>Reflective details for visibility in low light</li>
+            </ul>
+          </div>
+
+          <form class="product-form">
+            <div class="form-group">
+              <label for="size">Size</label>
+              <select id="size">
+                <option value="">Select Size</option>
+                <option value="7">US 7</option>
+                <option value="8">US 8</option>
+                <option value="9">US 9</option>
+                <option value="10">US 10</option>
+                <option value="11">US 11</option>
+                <option value="12">US 12</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="color">Color</label>
+              <select id="color">
+                <option value="">Select Color</option>
+                <option value="black">Black/White</option>
+                <option value="blue">Blue/Gray</option>
+                <option value="red">Red/Black</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" min="1" value="1">
+            </div>
+            <button type="submit" class="btn btn-full">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-tabs">
+    <div class="container">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="details">Product Details</button>
+        <button class="tab-btn" data-tab="specs">Specifications</button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+      </div>
+      <div class="tab-content active" id="details">
+        <h3>Product Details</h3>
+        <p>The Elite Running Shoes are designed with the serious runner in mind. Every aspect of these shoes has been engineered to enhance your performance while providing maximum comfort during your runs, whether you're training for a marathon or enjoying a casual jog in the park.</p>
+        <p>The lightweight design reduces fatigue during long runs, while the responsive cushioning provides excellent energy return with each step. The breathable mesh upper keeps your feet cool and comfortable, and the anatomical design ensures a natural, comfortable fit.</p>
+      </div>
+      <div class="tab-content" id="specs">
+        <h3>Specifications</h3>
+        <table class="specs-table">
+          <tr>
+            <td>Weight</td>
+            <td>8.5 oz (Men's size 9)</td>
+          </tr>
+          <tr>
+            <td>Upper Material</td>
+            <td>Engineered mesh with synthetic overlays</td>
+          </tr>
+          <tr>
+            <td>Midsole</td>
+            <td>Responsive EVA foam</td>
+          </tr>
+          <tr>
+            <td>Outsole</td>
+            <td>Durable carbon rubber</td>
+          </tr>
+          <tr>
+            <td>Heel-to-Toe Drop</td>
+            <td>10mm</td>
+          </tr>
+          <tr>
+            <td>Arch Support</td>
+            <td>Neutral to mild overpronation</td>
+          </tr>
+          <tr>
+            <td>Best For</td>
+            <td>Road running, training, daily wear</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab-content" id="reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+          <div class="review-header">
+            <span class="review-stars">★★★★★</span>
+            <h4>Perfect for my marathon training</h4>
+          </div>
+          <p class="review-author">By Michael R. on April 15, 2025</p>
+          <p class="review-text">These shoes have been incredible for my marathon training. Great cushioning, no blisters, and they still look good after 100+ miles.</p>
+        </div>
+        <div class="review">
+          <div class="review-header">
+            <span class="review-stars">★★★★☆</span>
+            <h4>Good but runs small</h4>
+          </div>
+          <p class="review-author">By Jessica T. on March 22, 2025</p>
+          <p class="review-text">I love these shoes for my daily runs, but I would recommend ordering a half size up. Otherwise, they're perfect!</p>
+        </div>
+        <div class="review">
+          <div class="review-header">
+            <span class="review-stars">★★★★★</span>
+            <h4>Worth every penny</h4>
+          </div>
+          <p class="review-author">By David K. on February 8, 2025</p>
+          <p class="review-text">After trying several different brands, I finally found these. The comfort is unmatched, and my knees don't hurt after long runs anymore.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-products">
+    <div class="container">
+      <h2 class="section-title">You May Also Like</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Running+Shorts" alt="Running Shorts">
+          <h3>Performance Running Shorts</h3>
+          <p class="price">$39.99</p>
+          <a href="#" class="btn-secondary">View Details</a>
+        </div>
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Sports+Socks" alt="Sports Socks">
+          <h3>Athletic Compression Socks</h3>
+          <p class="price">$14.99</p>
+          <a href="#" class="btn-secondary">View Details</a>
+        </div>
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Water+Bottle" alt="Water Bottle">
+          <h3>Sports Water Bottle</h3>
+          <p class="price">$24.99</p>
+          <a href="#" class="btn-secondary">View Details</a>
+        </div>
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Activity+Tracker" alt="Activity Tracker">
+          <h3>Running Activity Tracker</h3>
+          <p class="price">$89.99</p>
+          <a href="#" class="btn-secondary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>SportVerse</h3>
+          <p>Premium sports equipment for athletes of all levels. Quality products to help you reach your full potential.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Email: info@sportverse.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Address: 123 Sport Street, Athleteville, SP 12345</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 SportVerse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

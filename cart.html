@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - SportVerse</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><h1>SportVerse</h1></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cart.html" class="cart-icon active">Cart (2)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Your Shopping Cart</h1>
+      <p>Review and checkout</p>
+    </div>
+  </section>
+
+  <section class="cart">
+    <div class="container">
+      <div class="cart-grid">
+        <div class="cart-items">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="product-info">
+                  <img src="https://placehold.co/100x100?text=Shoes" alt="Elite Running Shoes">
+                  <div>
+                    <h4>Elite Running Shoes</h4>
+                    <p>Size: US 10 | Color: Black/White</p>
+                  </div>
+                </td>
+                <td>$129.99</td>
+                <td>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+                  </div>
+                </td>
+                <td>$129.99</td>
+                <td><button class="remove-btn">✕</button></td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  <img src="https://placehold.co/100x100?text=Water+Bottle" alt="Sports Water Bottle">
+                  <div>
+                    <h4>Sports Water Bottle</h4>
+                    <p>Color: Blue</p>
+                  </div>
+                </td>
+                <td>$24.99</td>
+                <td>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+                  </div>
+                </td>
+                <td>$24.99</td>
+                <td><button class="remove-btn">✕</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="cart-actions">
+            <div class="coupon">
+              <input type="text" placeholder="Coupon code">
+              <button class="btn-secondary">Apply Coupon</button>
+            </div>
+            <button class="btn-secondary">Update Cart</button>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span>$154.98</span>
+          </div>
+          <div class="summary-item">
+            <span>Shipping</span>
+            <span>Free</span>
+          </div>
+          <div class="summary-item">
+            <span>Tax</span>
+            <span>$12.40</span>
+          </div>
+          <div class="summary-total">
+            <span>Total</span>
+            <span>$167.38</span>
+          </div>
+          <button class="btn btn-full">Proceed to Checkout</button>
+          <p class="secure-checkout">
+            <span class="secure-icon">🔒</span> Secure Checkout
+          </p>
+          <div class="payment-methods">
+            <p>We accept:</p>
+            <div class="payment-icons">
+              <span class="payment-icon">Visa</span>
+              <span class="payment-icon">MC</span>
+              <span class="payment-icon">Amex</span>
+              <span class="payment-icon">PayPal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="you-might-like">
+    <div class="container">
+      <h2 class="section-title">You Might Also Like</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Fitness+Band" alt="Fitness Band">
+          <h3>Resistance Bands Set</h3>
+          <p class="price">$34.99</p>
+          <a href="product-detail.html" class="btn-secondary">View Details</a>
+        </div>
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Gym+Bag" alt="Gym Bag">
+          <h3>Durable Gym Bag</h3>
+          <p class="price">$79.99</p>
+          <a href="product-detail.html" class="btn-secondary">View Details</a>
+        </div>
+        <div class="product">
+          <img src="https://placehold.co/300x300?text=Yoga+Mat" alt="Yoga Mat">
+          <h3>Premium Yoga Mat</h3>
+          <p class="price">$45.99</p>
+          <a href="product-detail.html" class="btn-secondary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>SportVerse</h3>
+          <p>Premium sports equipment for athletes of all levels. Quality products to help you reach your full potential.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Email: info@sportverse.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Address: 123 Sport Street, Athleteville, SP 12345</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 SportVerse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
